@@ -20,3 +20,24 @@
 4. System: to control different situations:
     * display messages on different info panels on each floor
     * assigning/removing a vehicle from a parking spot
+
+### Class
+* ParkingLot
+* ParkingFloor
+* ParkingSpot
+* Account: accounts for controlling the system.
+    * Admin account
+    * Parking attendant account
+* Parking ticket
+* Vehicle: an abstract supporting different types of vehicles
+* EntrancePanel and ExitPanel
+* Payment: support cash and credit card
+* ParkingRate
+* ParkingDisplayBoard
+* ParkingAttendantPortal: contains all the operations that an attendant can perform, like scanning tickets and processing payments
+* CustomerInfoPortal
+* (Optional) ElectricPanel
+
+
+
+

@@ -1,6 +1,5 @@
 r"""
 Classes of accounts that can control systems.
-Admin can 
 """
 
 

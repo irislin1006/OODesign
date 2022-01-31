@@ -5,8 +5,8 @@ from abc import ABC
 
 
 class ParkingSpot(ABC):
-    def __init__(self, parking_spot_id, parking_spot_type) -> None:
-        self.parking_spot_id = parking_spot_id
+    def __init__(self, number, parking_spot_type) -> None:
+        self.number = number
         self.parking_spot_type = parking_spot_type
         self.is_free = True
         self.__vehicle = None
@@ -24,20 +24,20 @@ class ParkingSpot(ABC):
 
 
 class MiniSpot(ParkingSpot):
-    def __init__(self, parking_spot_id) -> None:
-        super().__init__(parking_spot_id, "Mini")
+    def __init__(self, number) -> None:
+        super().__init__(number, "Mini")
 
 
 class LargeSpot(ParkingSpot):
-    def __init__(self, parking_spot_id) -> None:
-        super().__init__(parking_spot_id, "Large")
+    def __init__(self, number) -> None:
+        super().__init__(number, "Large")
 
 
 class MotorcycleSpot(ParkingSpot):
-    def __init__(self, parking_spot_id) -> None:
-        super().__init__(parking_spot_id, "Motorcycle")
+    def __init__(self, number) -> None:
+        super().__init__(number, "Motorcycle")
 
 
 class ElectricCarSpot(ParkingSpot):
-    def __init__(self, parking_spot_id) -> None:
-        super().__init__(parking_spot_id, "Electric")
+    def __init__(self, number) -> None:
+        super().__init__(number, "Electric")

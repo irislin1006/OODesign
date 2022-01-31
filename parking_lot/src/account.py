@@ -4,7 +4,7 @@ Classes of accounts that can control systems.
 
 
 class Account:
-    def __init__(self, user_id, pwd, status=AccountStatus.Active) -> None:
+    def __init__(self, user_id, pwd, status="Active") -> None:
         self.user_id = user_id
         self.pwd = pwd
         self.status = status
@@ -14,7 +14,7 @@ class Account:
 
 
 class Admin(Account):
-    def __init__(self, user_id, pwd, status=AccountStatus.Active) -> None:
+    def __init__(self, user_id, pwd, status="Active") -> None:
         super().__init__(user_id, pwd, status)
     
     def add_parking_floor(self, floor):
@@ -34,7 +34,7 @@ class Admin(Account):
 
 
 class ParkingAttendant(Account):
-    def __init__(self, user_id, pwd, status=AccountStatus.Active) -> None:
+    def __init__(self, user_id, pwd, status="Active") -> None:
         super().__init__(user_id, pwd, status)
     
     def process_ticket(self, ticket_id):
